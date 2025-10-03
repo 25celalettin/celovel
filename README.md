@@ -1,40 +1,40 @@
-# 🚀 Celovel Framework
+# Celovel Framework
 
 Laravel benzeri modern PHP web framework'ü. MVC mimarisi, routing, middleware, service container ve daha birçok özellik ile güçlü web uygulamaları geliştirin.
 
-## ✨ Özellikler
+## Özellikler
 
-### 🏗️ Temel Mimari
+### Temel Mimari
 - **MVC Pattern** - Model, View, Controller ayrımı
 - **Service Container** - Dependency Injection sistemi
 - **PSR-4 Autoloading** - Modern PHP standartları
 - **Environment Configuration** - .env dosyası desteği
 
-### 🌐 HTTP Katmanı
+### HTTP Katmanı
 - **RESTful Routing** - GET, POST, PUT, DELETE desteği
 - **Request/Response** - HTTP istekleri ve yanıtları
 - **Middleware System** - Request pipeline yönetimi
 - **Automatic JSON Response** - Array döndürme otomatik JSON'a çevrilir
 
-### 🎨 View Sistemi
+### View Sistemi
 - **Blade-like Template Engine** - Laravel benzeri template sistemi
 - **Layout Inheritance** - @extends, @section, @yield
 - **Template Caching** - Performans optimizasyonu
 - **Helper Functions** - view(), url(), asset() fonksiyonları
 
-### 🗄️ Veritabanı
+### Veritabanı
 - **Eloquent-like ORM** - Model tabanlı veritabanı işlemleri
 - **Query Builder** - Fluent API ile sorgu oluşturma
 - **Database Connection** - Çoklu veritabanı desteği
 - **Migration Ready** - Veritabanı şema yönetimi
 
-### 🛠️ CLI Tool
+### CLI Tool
 - **Artisan-like Commands** - Laravel benzeri komut satırı arayüzü
 - **Code Generation** - Controller, Model, Middleware oluşturma
 - **Development Server** - Otomatik port bulma ile server başlatma
 - **Route Listing** - Kayıtlı route'ları listeleme
 
-## 📦 Kurulum
+## Kurulum
 
 ### Gereksinimler
 - PHP 8.1+
@@ -64,7 +64,7 @@ php celovel serve
 
 Server `http://localhost:8000` adresinde çalışmaya başlayacak.
 
-## 🚀 Hızlı Başlangıç
+## Hızlı Başlangıç
 
 ### 1. İlk Route'unuzu Oluşturun
 
@@ -142,7 +142,7 @@ class UserModel extends Model
 }
 ```
 
-## 🛣️ Routing
+## Routing
 
 ### Temel Route'lar
 
@@ -195,7 +195,7 @@ $app->get('/admin/users', [AdminController::class, 'users'], ['auth', 'admin']);
 // Application.php'de tanımlanır
 ```
 
-## 🎨 View Sistemi
+## View Sistemi
 
 ### Blade Template Engine
 
@@ -357,7 +357,7 @@ $app->get('/protected', function($request) {
 $app->get('/admin', [AdminController::class, 'index'], ['auth', 'admin']);
 ```
 
-## 🗄️ Veritabanı ve ORM
+## Veritabanı ve ORM
 
 ### Model Kullanımı
 
@@ -416,7 +416,7 @@ $users = $query->table('users')
     ->get();
 ```
 
-## 🛠️ CLI Komutları
+## CLI Komutları
 
 ### Mevcut Komutlar
 
@@ -520,7 +520,7 @@ celovel/
 └── README.md
 ```
 
-## 🚀 Performans
+## Performans
 
 ### View Caching
 
@@ -615,7 +615,7 @@ $app->get('/admin/users', [AdminController::class, 'users'], ['auth', 'admin']);
 $app->post('/admin/users', [AdminController::class, 'store'], ['auth', 'admin']);
 ```
 
-## 🤝 Katkıda Bulunma
+## Katkıda Bulunma
 
 1. Fork yapın
 2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
@@ -623,22 +623,12 @@ $app->post('/admin/users', [AdminController::class, 'store'], ['auth', 'admin'])
 4. Push yapın (`git push origin feature/amazing-feature`)
 5. Pull Request oluşturun
 
-## 📄 Lisans
+## Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
 
-## 🙏 Teşekkürler
+## Teşekkürler
 
 - Laravel framework'üne ilham verdiği için
 - PHP topluluğuna katkıları için
 - Tüm geliştiricilere
-
-## 📞 İletişim
-
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: your-email@example.com
-- Website: https://celovel.dev
-
----
-
-**Celovel Framework** - Modern PHP web development'ın geleceği! 🚀
